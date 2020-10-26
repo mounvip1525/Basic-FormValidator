@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+    font-family: 'Sen', sans-serif;
+    letter-spacing: 2px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:whitesmoke;
+}
+.container{
+    width:35%;
+    height:600px;
+    background:white;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px 5px rgba(0,0,0,0.4);
+}
+.form{
+    width:90%;
+}
+.form-group{
+    height:65px;
+}
+label{
+    position:relative;
+    bottom:3px;
+}
+input{
+    padding:5px;
+    border-radius: 4px;
+    width:100%;
+    height:32px;
+    border:1px solid black;
+    outline:none;
+    box-sizing: border-box;
+    transition:all 0.3s;
+}
+input:valid{
+    border:1px solid green;
+}
+input:invalid{
+    border:1px solid red;
+}
+button{
+    cursor:pointer;
+    height:45px;
+    width:100%;
+    border-radius: 5px;
+    margin-top:5px;
+    background:black;
+    color:white;
+    border:none;
+    font-family:'Sen',sans-serif;
+    font-size:20px;
+    letter-spacing: 2px;
+}
+button:hover{
+    transform:scale(1.1);
+}
+button:focus{
+    outline:none;
+}
+.message-container{
+    border:1px solid black;
+    margin-top:15px;
+    display:flex;
+    justify-content: center;
+    border-radius: 5px;
+    width:80%;
+    color:black;
+}

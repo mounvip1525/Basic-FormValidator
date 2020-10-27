@@ -15,7 +15,7 @@ body{
 }
 .container{
     width:35%;
-    height:600px;
+    height:590px;
     background:white;
     display:flex;
     flex-direction:column;
@@ -70,10 +70,14 @@ button:focus{
 }
 .message-container{
     border:1px solid black;
-    margin-top:15px;
+    margin-top:12px;
     display:flex;
     justify-content: center;
     border-radius: 5px;
     width:80%;
     color:black;
+    height:55px;
+}
+.message{
+    margin:auto;
 }

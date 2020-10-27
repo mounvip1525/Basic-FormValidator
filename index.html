@@ -10,30 +10,40 @@
 <body>
    <div class="container">
        <h2>Sign Up Today!</h2>
-       <form id="form">
+       <!-- novalidate is used for preventing the form to submit when any of the values aren't entered -->
+       <!-- <form id="form" novalidate> -->
+        <form id="form">
            <div class="form-group">
                <label for="name">Full Name</label>
-               <input type="text" id="name" placeholder="Enter your Full Name">
+               <input type="text" id="name" placeholder="Enter your Full Name" name="name"
+                    required minlength="3" maxlength="55">
+                    <!-- name attribute is added to store the form details in the form of name/value pairs -->
            </div>
            <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="+91 XXXXXXXXXX">
+                <input type="tel" id="phone" placeholder="+91 XXXXXXXXXX" name="phone"
+                     required pattern="[0-9+]{3,4} [0-9 ]{4,15}">
             </div>
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="example@address.com">
+                <input type="email" id="email" placeholder="example@address.com" name="email"
+                     required>
             </div>
             <div class="form-group">
                 <label for="website">Website URL</label>
-                <input type="url" id="website" placeholder="https://yourwebsite.com">
+                <input type="url" id="website" placeholder="https://yourwebsite.com" name="website"
+                     required>
             </div>
             <div class="form-group">
                 <label for="password1">Create Password</label>
-                <input type="password" id="password1" placeholder="Create password">
+                <input type="password" id="password1" placeholder="Create password(Min. length=8 characters)"
+                     required  pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                     title="Your password should have 1 uppercase,1 lowercase letter and a number">
             </div>
             <div class="form-group">
                 <label for="password2">Confirm Password</label>
-                <input type="password" id="password2" placeholder="Confirm password">
+                <input type="password" id="password2" placeholder="Confirm password" name="password"
+                     required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
             </div>
                 <button type="submit">Register</button>
         </form>

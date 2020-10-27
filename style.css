@@ -11,7 +11,21 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-    background:whitesmoke;
+    background: linear-gradient(-45deg, #f4f4f2, #e8e8e8, #9497a0);
+    background-size: 400% 400%;
+    animation:gradient 4s ease-in-out infinite;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
 }
 .container{
     width:35%;

@@ -7,7 +7,7 @@ body{
     padding:0;
     min-height:100vh;
     font-family: 'Sen', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -69,15 +69,18 @@ button{
     width:100%;
     border-radius: 5px;
     margin-top:5px;
-    background:black;
-    color:white;
+    background:white;
+    /* color:white; */
     border:none;
     font-family:'Sen',sans-serif;
     font-size:20px;
     letter-spacing: 2px;
+    border:2px solid black;
 }
 button:hover{
-    transform:scale(1.1);
+    /* transform:scale(1.1); */
+    background:black;
+    color:white;
 }
 button:focus{
     outline:none;
@@ -87,11 +90,15 @@ button:focus{
     margin-top:12px;
     display:flex;
     justify-content: center;
+    align-items: center;
     border-radius: 5px;
     width:80%;
     color:black;
-    height:55px;
+    height:40px;
 }
-.message{
+/* .message{
     margin:auto;
+} */
+input::placeholder{
+    color:rgb(158, 156, 156);
 }
